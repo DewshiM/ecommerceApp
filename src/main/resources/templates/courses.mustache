@@ -1,0 +1,34 @@
+{{>Header}}
+<section id="all-courses" class="all-courses-area pt-170">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-7 col-md-10 mx-auto">
+                <div class="section-title text-center mb-50">
+                    <h2 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Popular Courses</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".4s"> You can choose courses from here</p>
+                </div>
+            </div>
+            <div class="topnav">
+
+              <form action="#" method="post">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Search.."/>
+                &nbsp
+                <input type="submit" value="Search"/>
+              </form>
+            </div>
+        </div>
+        <div class="row mb-30">
+            {{#course}}
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="panel panel-primary">
+                     <div class="panel-heading">
+                        <h4><a href="">{{Name}}</a></h4>
+                     </div>
+                </div>
+            </div>
+            {{/course}}
+        </div>
+    </div>
+ </section>
+
+{{>Footer}}
